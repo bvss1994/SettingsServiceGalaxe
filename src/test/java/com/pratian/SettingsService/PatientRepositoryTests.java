@@ -63,18 +63,17 @@ public class PatientRepositoryTests {
 		assertThat(pRepo.existsById(1L)).isFalse();
 	}
 
-	@Test
-
-	public void updatePatientTest2() {
-
-		Patient patients = pRepo.findById(1L).get();
-
-		patients.setPatientMobileNumber(987678433);
-
-		Patient patientUpdated = pRepo.save(patients);
-
-		Assertions.assertThat(patientUpdated.getPatientMobileNumber()).isEqualTo(987678433);
-	}
+	//	@Test
+//	public void updatePatientTest2() {
+//
+//		Patient patients = pRepo.findById(1L).get();
+//
+//		patients.setPatientMobileNumber(987678433);
+//
+//		Patient patientUpdated = pRepo.save(patients);
+//
+//		Assertions.assertThat(patientUpdated.getPatientMobileNumber()).isEqualTo(987678433);
+//	}
 //@Test
 //
 //  public void updatePatientTest1(){
